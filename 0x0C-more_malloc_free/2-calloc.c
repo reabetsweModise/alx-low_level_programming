@@ -3,7 +3,7 @@
 
 /**
  * *_memset - Adds the memory with a  byte
- * @s: flied mmemory area 
+ * @s: flied mmemory area
  * @b: chararector  that is to be  copied
  * @n: n of times to copy b
  * Return: The memory area s
