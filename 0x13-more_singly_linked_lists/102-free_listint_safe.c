@@ -17,7 +17,7 @@ size_t free_listint_safe(listint_t **h)
 
 	while (*h)
 	{
-		my_diffeewnce = *h - (*h)->next;
+		my_difference = *h - (*h)->next;
 		if (my_difference > 0)
 		{
 			temp = (*h)->next;
