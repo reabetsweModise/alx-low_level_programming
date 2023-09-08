@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - insert a key, value pair to a hash table.
+ * hash_table_set -this fuction  insert a key, value pair to a hash table.
  * @ht: hash table to insert to.
  * @key: key
  * @value: value to be stored at that key.
@@ -17,7 +17,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!ht || !key)
 		return (0);
 
-	idx = key_index((unsigned char *h)key, ht->size);
+	idx = key_index((unsigned char *)key, ht->size);
 	if (value)
 		str = strdup(value);
 	else
@@ -42,13 +42,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 }
 
 /**
- * update_node -this Fuction  update or added a node if one already exists
+ * update_node -this Fuction update or added a node if one already exists
  *
  * @node: pointer to a node the exist
  * @key: key
- * @value: value to update node with.
+ * @value: value to updat node with.
  *
- * Return: pointer
+ * Return: pointer to head of a list
  */
 hash_node_t *update_node(hash_node_t *node, const char *key, char *value)
 {
@@ -78,8 +78,9 @@ hash_node_t *update_node(hash_node_t *node, const char *key, char *value)
 	return (node);
 
 }
+
 /**
- * new_node -this fuction  create a new node
+ * new_node -this Fuction  create a new node
  * @c_node: current node to add add at the end.
  *
  * Return: a point to the new node.
